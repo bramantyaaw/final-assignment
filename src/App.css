@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  background-color: orange;
+}
+
+.text-white{
+  color: white;
+}
+
+.cards{
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+  
+.cards:hover{
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  transform: scale(1.1);
+}
+
+/* .movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+  } */
