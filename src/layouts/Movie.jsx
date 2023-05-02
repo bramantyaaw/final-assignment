@@ -19,8 +19,12 @@ const Movie = ({ state }) => {
               <h2>Show your favourite movies</h2>
             </div>
             <Row xs={2} md={4}>
-              {data?.map((data) => {
-                return <CardCustom data={data} />;
+              {data?.map((data, index) => {
+                return (
+                  <div key={index}>
+                    <CardCustom data={data} />
+                  </div>
+                );
               })}
             </Row>
             {state?.errorMessage && <span>{state?.errorMessage}</span>}

@@ -1,7 +1,9 @@
 import { Card, Col } from "react-bootstrap";
 import no_img from "../assets/images/No_Image_Available.jpg";
 
-const CardCustom = ({ data }) => {
+const CardCustom = (props) => {
+  const { data } = props;
+
   return (
     <Col className={"py-3"}>
       <Card className="cards">
