@@ -41,7 +41,7 @@ function App() {
 
   const getApi = async(searchData) => {
       try {
-        const omdbApi = `http://www.omdbapi.com/?i=tt3896198&apikey=94b194bb&s=${searchData}`;
+        const omdbApi = `https://www.omdbapi.com/?i=tt3896198&apikey=94b194bb&s=${searchData}`;
         const response = await axios.get(omdbApi);
         const data = response?.data;
   
